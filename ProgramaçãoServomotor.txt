@@ -1,0 +1,17 @@
+#include <Servo.h>
+//inclusão biblioteca
+int pot = A0;//pino de potenciametro
+int val;//gaveta para dados
+Servo myservo;
+void setup()
+{
+  myservo.attach(9);//indica o pino que
+  //esta o servo
+}
+void loop()
+{
+  val = analogRead(pot);
+  val = map(val,0,1023,0,180);
+  myservo.write(val);
+  delay(15);
+}
