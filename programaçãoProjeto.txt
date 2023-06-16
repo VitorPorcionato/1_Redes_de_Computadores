@@ -12,7 +12,7 @@ void loop() {
    valorldr = analogRead (ldr);//Lê o valor do sensor ldr e armazena na variável valorldr
    Serial.println(valorldr);//Imprime na serial os dados de valorldr
    
-   if((valorldr) < 100){ //Se o valor de valorldr for menor que 500:
+   if((valorldr) < 100){ //Se o valor de valorldr for menor que 100:
     digitalWrite(led, HIGH);//Coloca led em alto para acioná-lo
   }  
   else{ //Senão: 
